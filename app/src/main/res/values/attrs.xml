@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WeightScaleRulerView">
+        <attr name="longDividerColor" format="color" />
+        <attr name="longDividerHeight" format="dimension" />
+        <attr name="longDividerWidth" format="dimension" />
+        <attr name="shortDividerColor" format="color" />
+        <attr name="shortDividerHeight" format="dimension" />
+        <attr name="shortDividerWidth" format="dimension" />
+        <attr name="dividerSpace" format="dimension" />
+        <attr name="weightTextSize" format="dimension" />
+        <attr name="weightTextColor" format="color" />
+        <attr name="weightTextMarginTop" format="dimension" />
+    </declare-styleable>
+</resources>

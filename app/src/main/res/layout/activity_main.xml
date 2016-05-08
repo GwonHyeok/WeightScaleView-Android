@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="kr.co.hyeok.weightscaleview.MainActivity">
+
+    <TextView
+        android:id="@+id/weight_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="0.0"
+        android:textSize="32sp" />
+
+    <kr.co.hyeok.weightscaleview.customview.WeightScaleRulerView
+        android:id="@+id/scaleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        app:dividerSpace="40dp"
+        app:longDividerColor="@color/colorPrimary"
+        app:longDividerHeight="32dp"
+        app:longDividerWidth="1dp"
+        app:shortDividerColor="@color/colorPrimary"
+        app:shortDividerHeight="14dp"
+        app:shortDividerWidth="1dp"
+        app:weightTextMarginTop="15dp"
+        app:weightTextSize="18sp" />
+
+    <SeekBar
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="200" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="onCLickAnimate"
+        android:text="애니메이션" />
+</LinearLayout>
